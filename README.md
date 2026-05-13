@@ -1,4 +1,4 @@
-# Shivani Sathe
+# Shivani Sathe (Waikar)
 
 **Lead Technical Writer | AI-Powered Documentation & Product Education**
 
@@ -18,7 +18,6 @@ Previously: Led digital adoption initiatives, built in-app training programs, an
 - AI-powered documentation automation and content quality analysis
 - Jobs-to-be-Done (JTBD) methodology implementation
 - Product education and interactive learning design
-- Analytics-driven content improvement
 - Cross-functional collaboration and strategic documentation planning
 
 ---
@@ -29,7 +28,7 @@ Previously: Led digital adoption initiatives, built in-app training programs, an
 
 Most technical writers organize content around features. I organize it around user goals.
 
-**Why?** Users don't read documentation to learn about features—they read it to complete a job. When documentation mirrors user workflow instead of product architecture, adoption increases and support dependency decreases.
+**Why?** Users don't read documentation to learn about features. They read it to complete a job. When documentation mirrors user workflow instead of product architecture, adoption increases and support dependency decreases.
 
 **Example:** Instead of documenting "Database Configuration" as a feature section, I document "Setting up your first production database" as a user goal. The content might be similar, but the framing makes it immediately actionable.
 
@@ -42,22 +41,19 @@ This is why I advocate for Jobs-to-be-Done (JTBD) methodology in technical docum
 **AI is augmentation, not replacement.**
 
 ### What AI Does Well
-- Automate repetitive quality checks (style, consistency, completeness)
+- Automate repetitive quality checks like style, consistency, and completeness
 - Generate first drafts from technical specifications
 - Analyze content at scale to identify gaps and redundancies
 - Repurpose existing content for different formats
 
 ### What Humans Do Better
 - Understand user context and intent
-- Make strategic decisions about what to document (and what not to)
+- Make strategic decisions about what to document and what not to
 - Translate complex technical concepts into accessible language
-- Know when documentation isn't the solution (when product UX needs fixing instead)
+- Know when documentation isn't the solution, when product UX needs fixing instead
 
 ### How I Use AI
-I build custom tools to eliminate documentation toil so I can focus on strategy:
-- **Claude skills** for content quality analysis and JTBD automation
-- **Custom Gemini Gems** for release notes review and workflow standardization
-- **NotebookLM** for content analysis and gap identification
+I build custom tools to eliminate documentation toil so I can focus on strategy. **Claude skills** for content quality analysis and JTBD automation. **Custom Gemini Gems** for release notes review and workflow standardization. **NotebookLM** for content analysis and gap identification.
 
 AI makes me more effective, not redundant. It handles the repetitive work while I focus on understanding users, structuring information, and collaborating with product teams.
 
@@ -70,102 +66,51 @@ AI makes me more effective, not redundant. It handles the repetitive work while 
 Jobs-to-be-Done is a framework for organizing documentation around what users are trying to accomplish, rather than what features exist in the product.
 
 **Traditional approach:** "Here's how Feature X works."  
-**JTBD approach:** "Here's how to accomplish Goal Y" (which may involve multiple features).
+**JTBD approach:** "Here's how to accomplish Goal Y," which may involve multiple features.
 
 ### How I Implement JTBD
 
-**1. Identify User Jobs**
-- Analyze Adobe Analytics to see what users search for and where they struggle
-- Review support tickets to identify recurring user goals
-- Interview developers and customer success teams to understand real-world workflows
+**Identify User Jobs**
 
-**2. Extract Job Statements**
-- Use AI (Claude, Gemini) to analyze existing content and generate job statements
-- Map features to user goals rather than documenting features in isolation
-- Identify jobs that require multiple features or cross-product workflows
+I analyze Adobe Analytics to see what users search for and where they struggle. I review support tickets to identify recurring user goals. I interview developers and customer success teams to understand real-world workflows.
 
-**3. Restructure Content**
-- Reorganize documentation around user journeys instead of product capabilities
-- Create clear entry points for different user personas and proficiency levels
-- Use AI to identify consolidation opportunities where multiple pages serve the same job
+**Extract Job Statements**
 
-**4. Measure Impact**
-- Track bounce rates, time-on-page, and support ticket trends
-- Iterate based on what users actually use, not what we think they need
+I use AI like Claude and Gemini to analyze existing content and generate job statements. I map features to user goals rather than documenting features in isolation. I identify jobs that require multiple features or cross-product workflows.
+
+**Restructure Content**
+
+I reorganize documentation around user journeys instead of product capabilities. I create clear entry points for different user personas and proficiency levels. I use AI to identify consolidation opportunities where multiple pages serve the same job.
+
+**Measure Impact**
+
+I track bounce rates, time-on-page, and support ticket trends. I iterate based on what users actually use, not what we think they need.
 
 ### Why JTBD Matters
 
-Red Hat adopted JTBD organization-wide because documentation structured around user goals:
-- **Reduces time-to-value** (users find what they need faster)
-- **Decreases support dependency** (documentation maps to real workflows)
-- **Improves product adoption** (users succeed faster, trust the product more)
+Red Hat adopted JTBD organization-wide because documentation structured around user goals reduces time-to-value. Users find what they need faster. It decreases support dependency because documentation maps to real workflows. It improves product adoption because users succeed faster and trust the product more.
 
 I didn't invent this methodology, but I learned how to scale it using AI-powered tools that automate the analysis and restructuring work.
 
 ---
 
-## Content Quality Analysis (CQA)
+## Content Quality Analysis
 
-### How I Measure Documentation Quality
+At Red Hat, there was a rigorous exercise around content quality analysis. Everyone was spending hours on manual reviews, using their own tools and approaches. The process was inconsistent and time-consuming.
 
-**Accuracy is table stakes.** Quality documentation must also be:
+I saw an opportunity.
 
-| Quality Dimension | What I Measure |
-|---|---|
-| **Findable** | Can users locate information when needed? (search analytics, navigation paths) |
-| **Scannable** | Can they quickly determine if this page solves their problem? (page structure, headings) |
-| **Actionable** | Are steps clear enough to execute without guessing? (procedure completeness, examples) |
-| **Complete** | Does it cover the full user journey, not just the happy path? (error handling, prerequisites) |
-| **Maintainable** | Can it be updated efficiently when the product changes? (modular structure, single-sourcing) |
+I started experimenting with AI to automate the quality checks. First, I tried NotebookLM, but it wasn't precise enough for the kind of detailed analysis we needed. Then I discovered I could build custom Claude skills that would not just flag issues but explain *why* something failed quality standards.
 
-### My CQA Process
+So I built one.
 
-At Red Hat, I learned rigorous content quality standards. When I saw peers spending hours on manual reviews, I built a Claude skill to automate it.
+The skill automates the repetitive quality checks. It looks for structural issues like procedures without context or missing prerequisite information. It catches language problems like passive voice that obscures responsibility or undefined jargon. It identifies user experience issues like cognitive overload or missing error handling.
 
-**What my CQA skill checks:**
+But here's what makes it useful: it doesn't just say "this is wrong." It explains why it matters and how to fix it. That turns it into a learning tool for writers, not just an automated checker.
 
-**Structural Issues:**
-- Procedures without context (missing explanation of *when* or *why* to use them)
-- Missing prerequisite information or assumptions
-- Orphaned content (pages not linked from navigation)
+When my peers saw it working, they started using it too. What used to take hours of manual review now happens in minutes. And the quality checks are consistent across the team.
 
-**Language Issues:**
-- Passive voice that obscures responsibility
-- Undefined jargon or acronyms
-- Ambiguous pronouns and unclear antecedents
-
-**User Experience Issues:**
-- Cognitive overload (information without visual hierarchy)
-- Assumed knowledge not stated upfront
-- Missing error handling or troubleshooting guidance
-
-The skill flags issues and explains *why* they fail quality standards, making it a learning tool for writers, not just an automated checker.
-
----
-
-## Analytics & Data-Driven Improvement
-
-### What I Track
-
-**User Behavior:**
-- Page views and bounce rates (are users finding what they need?)
-- Time-on-page (are they reading or desperately skimming?)
-- Search queries (what are users looking for that we don't have?)
-
-**Product Impact:**
-- Support ticket trends (where is documentation failing users?)
-- Feature adoption rates (does documentation correlate with usage?)
-- Onboarding completion rates (for interactive training content)
-
-### How I Use Data
-
-**Example:** At Red Hat, I noticed a high bounce rate on a "Getting Started" page. Adobe Analytics showed users were searching for "installation" but landing on a conceptual overview.
-
-**Action:** Restructured the page to lead with installation steps, added clear navigation to concepts for users who wanted them.
-
-**Result:** Bounce rate dropped 40%, time-on-page increased (users stayed to read related content).
-
-I treat documentation like a product: hypothesize, test, measure, iterate.
+**The real impact?** We freed up time to focus on strategic work like understanding user needs and improving information architecture, instead of spending hours hunting for style inconsistencies.
 
 ---
 
@@ -173,63 +118,57 @@ I treat documentation like a product: hypothesize, test, measure, iterate.
 
 ### My Philosophy on Product Education
 
-**Documentation is reactive. Training is proactive.**
+Documentation is reactive. Training is proactive.
 
 Users read documentation when they're stuck. They engage with training when they want to get better. Both are necessary, but they serve different jobs.
 
+### The Whatfix Story
+
+When I was at Odessa, I was still relatively new to technical writing. I was learning on the job, figuring things out as I went. I noticed something: we had comprehensive documentation, but users still struggled with onboarding.
+
+That's when I discovered Whatfix, a digital adoption platform that provides in-app guidance. What I loved about it was how it simplified the user journey by meeting users *where they are*. Not in a separate help portal, not in a PDF, but inside the product itself.
+
+I learned it from scratch. Built a demo for one workflow. Then I did something that felt risky at the time: I presented it to leadership.
+
+I showed them the data on support tickets related to onboarding. I walked them through the demo. I made the case that this could improve product adoption and reduce support load.
+
+They approved it.
+
+I led the initiative across Engineering, Product, Support, and executive teams. We designed interactive onboarding flows, product walkthroughs, and in-app training content for different user personas.
+
+**The result?** Onboarding-related support tickets dropped 30% within three months.
+
 ### How I Design Learning Programs
 
-**1. Segment by Job-to-be-Done, Not Just Role**
-- **First-time users:** Quick-start guides focused on one meaningful outcome
-- **Proficient users:** Advanced workflow optimization and integration guides
-- **Administrators:** Security, configuration, and governance documentation
+I segment by **job-to-be-done** and **proficiency level**, not just role.
+
+**First-time users** get quick-start guides focused on achieving one meaningful outcome fast. **Proficient users** get advanced workflow optimization and integration guides. **Administrators** get security, configuration, and governance documentation.
 
 Each persona gets different entry points into the same content, optimized for their goals.
 
-**2. Meet Users Where They Are**
-
-I learned Whatfix (a digital adoption platform) to build in-app guidance that appears inside the product, not in a separate help portal. This approach:
-- Reduces context-switching (users don't leave the product to learn)
-- Provides just-in-time learning (guidance appears when needed, not before)
-- Improves retention (users learn by doing, not by reading)
-
-**Impact:** Onboarding-related support tickets decreased 30% within 3 months.
-
-**3. Make Learning Measurable**
-
-Track engagement metrics:
-- **Completion rates** (are users finishing the training?)
-- **Drop-off points** (where do they abandon?)
-- **Time-to-competency** (how long until they achieve their goal independently?)
-
-Use data to iterate on content, format, and delivery.
-
 ---
 
-## Cross-Functional Leadership
+## How I Lead Without Authority
 
-### How I Lead Without Authority
+Most impactful initiatives require collaboration across Engineering, Product, Support, and Customer Success. As a technical writer, I rarely have direct authority over these teams.
 
-Most impactful initiatives require collaboration across Engineering, Product, Support, and Customer Success. As a technical writer, I rarely have direct authority over these teams. Here's how I get alignment:
+Here's how I get alignment.
 
-**1. Build Before Asking**
-- Learn the tool or methodology independently
-- Create a working prototype or proof-of-concept
-- Demonstrate value before requesting resources
+### Build Before Asking
 
-**Example:** I learned Whatfix on my own, built a demo for one workflow, then presented it to leadership with data on support ticket reduction potential.
+I learn the tool or methodology independently. I create a working prototype or proof-of-concept. I demonstrate value before requesting resources.
 
-**2. Quantify the Problem**
-- Use data to show the gap (support tickets, bounce rates, low adoption)
-- Translate the problem into business impact (time, cost, customer satisfaction)
-- Make the case that solving it aligns with company priorities
+When I wanted to implement Whatfix, I learned it on my own first. I built a demo for one workflow. Then I presented it to leadership with data on support ticket reduction potential.
 
-**3. Involve Stakeholders Early**
-- Get input from each team on their priorities and constraints
-- Position the initiative as solving *their* problems, not just a documentation project
-- Give credit generously and share wins publicly
+### Quantify the Problem
 
-**4. Default to Evidence Over Opinions**
+I use data to show the gap. Support tickets. Bounce rates. Low adoption numbers. I translate the problem into business impact: time, cost, customer satisfaction. I make the case that solving it aligns with company priorities.
+
+### Involve Stakeholders Early
+
+I get input from each team on their priorities and constraints. I position the initiative as solving *their* problems, not just a documentation project. I give credit generously and share wins publicly.
+
+### Default to Evidence Over Opinions
 
 When there's disagreement on approach, I ask:
 - "What does the user need to accomplish?"
@@ -240,23 +179,31 @@ Most disagreements dissolve when you shift from opinions to user evidence.
 
 ---
 
+## How I Use Data
+
+I treat documentation like a product: hypothesize, test, measure, iterate.
+
+At Red Hat, I noticed a high bounce rate on a "Getting Started" page. Adobe Analytics showed users were searching for "installation" but landing on a conceptual overview.
+
+So I restructured the page. I led with installation steps. I added clear navigation to concepts for users who wanted them.
+
+The bounce rate dropped 40%. Time-on-page increased because users stayed to read related content.
+
+That's the approach I take everywhere. Track what users actually do, not what we think they need. Use the data to improve. Test again.
+
+---
+
 ## Continuous Learning & Experimentation
 
 ### Tools & Technologies I've Learned to Solve Problems
 
-I learn whatever is needed to solve the problem in front of me:
+I learn whatever is needed to solve the problem in front of me.
 
-**When Git-based workflows became essential:** Learned version control and docs-as-code practices
+When Git-based workflows became essential, I learned version control and docs-as-code practices. When I wanted to automate documentation tasks, I learned Claude and built custom skills for content quality analysis and JTBD automation. When Red Hat adopted JTBD methodology, I learned the framework, implemented it, then built AI tools to scale it. When I saw product adoption challenges, I learned Whatfix from scratch and led a cross-functional initiative to implement in-app training. When I needed to measure content effectiveness, I learned Adobe Analytics and data-driven content improvement.
 
-**When I wanted to automate documentation tasks:** Learned Claude and built custom skills for CQA and JTBD automation
+I experiment constantly. NotebookLM for analysis. Gemini custom Gems for workflow automation. Claude for task automation.
 
-**When Red Hat adopted JTBD methodology:** Learned the framework, implemented it, then built AI tools to scale it
-
-**When I saw product adoption challenges:** Learned Whatfix from scratch and led a cross-functional initiative to implement in-app training
-
-**When I needed to measure content effectiveness:** Learned Adobe Analytics and data-driven content improvement
-
-I experiment constantly—NotebookLM for analysis, Gemini custom Gems for workflow automation, Claude for task automation. I treat experimentation as part of the job: hypothesize, test, measure, learn, iterate.
+I treat experimentation as part of the job: hypothesize, test, measure, learn, iterate.
 
 ---
 
@@ -264,7 +211,7 @@ I experiment constantly—NotebookLM for analysis, Gemini custom Gems for workfl
 
 **Email:** shivaniwaikar25@gmail.com  
 **LinkedIn:** [linkedin.com/in/shivani-waikar](https://linkedin.com/in/shivani-waikar/)  
-**GitHub:** [Your GitHub Profile]
+**GitHub:** [github.com/shivanisathe25](https://github.com/shivanisathe25)
 
 ---
 
