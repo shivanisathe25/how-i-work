@@ -68,29 +68,27 @@ Jobs-to-be-Done is a framework for organizing documentation around what users ar
 **Traditional approach:** "Here's how Feature X works."  
 **JTBD approach:** "Here's how to accomplish Goal Y," which may involve multiple features.
 
-### How I Implement JTBD
+### How I'm Implementing JTBD at Red Hat
 
-**Identify User Jobs**
+When Red Hat decided to adopt JTBD organization-wide, I saw an opportunity to not just implement it manually, but to build AI-powered tools that could scale the approach across multiple products.
 
-I analyze Adobe Analytics to see what users search for and where they struggle. I review support tickets to identify recurring user goals. I interview developers and customer success teams to understand real-world workflows.
+**Here's how I'm approaching it:**
 
-**Extract Job Statements**
+First, I analyze Adobe Analytics to see what users search for and where they struggle. I review support tickets to identify recurring user goals. I interview developers and customer success teams to understand real-world workflows.
 
-I use AI like Claude and Gemini to analyze existing content and generate job statements. I map features to user goals rather than documenting features in isolation. I identify jobs that require multiple features or cross-product workflows.
+Then I built custom AI tools to do the heavy lifting. I created a crawling script to gather existing content. I use Claude and Gemini to analyze that content and generate job statements at scale. The AI maps features to user goals, identifying jobs that require multiple features or cross-product workflows.
 
-**Restructure Content**
+Right now, I have the raw material ready. Job statements extracted. Content analyzed. Consolidation opportunities identified.
 
-I reorganize documentation around user journeys instead of product capabilities. I create clear entry points for different user personas and proficiency levels. I use AI to identify consolidation opportunities where multiple pages serve the same job.
+The next phase is restructuring the documentation itself. Reorganizing it around user journeys instead of product capabilities. Creating clear entry points for different user personas. Building the JTBD-oriented information architecture.
 
-**Measure Impact**
-
-I track bounce rates, time-on-page, and support ticket trends. I iterate based on what users actually use, not what we think they need.
+Then comes measurement. I'll track bounce rates, time-on-page, and support ticket trends. Iterate based on what users actually use, not what we think they need.
 
 ### Why JTBD Matters
 
-Red Hat adopted JTBD organization-wide because documentation structured around user goals reduces time-to-value. Users find what they need faster. It decreases support dependency because documentation maps to real workflows. It improves product adoption because users succeed faster and trust the product more.
+Red Hat adopted JTBD because documentation structured around user goals reduces time-to-value. Users find what they need faster. It decreases support dependency because documentation maps to real workflows. It improves product adoption because users succeed faster and trust the product more.
 
-I didn't invent this methodology, but I learned how to scale it using AI-powered tools that automate the analysis and restructuring work.
+What I'm doing differently is building AI-powered tools to scale the methodology. Instead of manual analysis taking weeks, the groundwork happens in hours. That frees me to focus on the strategic work: understanding user needs, designing the information architecture, and validating the restructured content with real users.
 
 ---
 
