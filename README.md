@@ -211,6 +211,8 @@ I treat experimentation as part of the job: hypothesize, test, measure, learn, i
 **LinkedIn:** [linkedin.com/in/shivani-waikar](https://linkedin.com/in/shivani-waikar/)  
 **GitHub:** [github.com/shivanisathe25](https://github.com/shivanisathe25)
 
+**Featured Interview:** [Tech Writer's Tribe - Interviewing the Leader](https://www.youtube.com/watch?v=csRCP7W8w4A)
+
 ---
 
 *Last updated: May 2026*
