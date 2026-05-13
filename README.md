@@ -1,6 +1,6 @@
 # Shivani Sathe (Waikar)
 
-**Lead Technical Writer | AI-Powered Documentation & Product Education**
+Technical Writer | AI-Powered Documentation & Product Education
 
 I build documentation systems and learning programs that accelerate product adoption for SaaS and analytics platforms. This page explains how I work, what I believe, and how I approach complex documentation challenges.
 
